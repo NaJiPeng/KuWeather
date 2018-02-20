@@ -72,11 +72,9 @@ public class SettingActivity extends BaseActivity<SettingPresenter> implements S
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 SPUtil.putBoolean("auto_update", isChecked);
-                Intent intent = new Intent(SettingActivity.this, AutoUpdateService.class);
                 if (isChecked) {
+                    Intent intent = new Intent(SettingActivity.this, AutoUpdateService.class);
                     startService(intent);
-                } else {
-                    stopService(intent);
                 }
             }
         });
