@@ -54,4 +54,5 @@ dependencies {
     compile 'com.nightonke:boommenu:2.1.1'
     implementation 'com.android.support:cardview-v7:27.0.2'
     implementation files('libs/BaiduLBS_Android.jar')
+    compile 'me.grantland:autofittextview:0.2.1'
 }
