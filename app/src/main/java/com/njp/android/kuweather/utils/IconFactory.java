@@ -3,6 +3,7 @@ package com.njp.android.kuweather.utils;
 import android.content.Context;
 
 import com.njp.android.kuweather.R;
+
 import java.util.Calendar;
 
 /**
@@ -64,10 +65,14 @@ public class IconFactory {
             return R.drawable.thundery;
         } else if (weather >= 307 && weather <= 312) {
             return R.drawable.rainy_heavy;
+        } else if (weather >= 404 && weather <= 406) {
+            return R.drawable.rainy_snowy;
         } else if (weather >= 400 && weather <= 407) {
             return R.drawable.snowy;
-        } else if (weather >= 500 && weather <= 508) {
+        } else if (weather >= 500 && weather <= 502) {
             return R.drawable.dusty;
+        } else if (weather >= 503 && weather <= 508) {
+            return R.drawable.sand;
         } else if (weather == 900 || weather == 901) {
             return R.drawable.temp;
         } else {
