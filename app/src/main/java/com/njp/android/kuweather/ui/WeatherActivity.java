@@ -160,6 +160,7 @@ public class WeatherActivity extends BaseActivity<WeatherPresenter> implements W
     protected void onStart() {
         super.onStart();
         mIvBackground.setImageResource(getBackgroundId());
+
     }
 
     @Override
@@ -341,15 +342,6 @@ public class WeatherActivity extends BaseActivity<WeatherPresenter> implements W
                 }
                 break;
         }
-    }
-
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            moveTaskToBack(false);
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
     }
 
     @Override
